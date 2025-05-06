@@ -1,6 +1,4 @@
 # Digital-Integrated-Circuits-VLSI-ASIC-Digital-Design
----
-
 Assignment for the "Large Scaled Digital Integrated Circuits – VLSI & ASIC Digital Design Project" Course
 Faculty of Engineering, AUTh
 School of Electrical and Computer Engineering
