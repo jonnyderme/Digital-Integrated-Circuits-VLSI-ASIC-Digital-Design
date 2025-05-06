@@ -4,11 +4,9 @@ Faculty of Engineering, AUTh
 School of Electrical and Computer Engineering
 Electronics and Computers Department
 
-📚 Course: Digital Integrated Circuits – VLSI & ASIC Digital Design Project
+📚 Course: Digital Integrated Circuits – VLSI/ASIC Digital Design Project
 🏛️ Faculty: AUTh - School of Electrical and Computer Engineering
 📅 Semester: 9th Semester, 2024–2025
-
-
 ---
 
 ## 📑 Table of Contents
