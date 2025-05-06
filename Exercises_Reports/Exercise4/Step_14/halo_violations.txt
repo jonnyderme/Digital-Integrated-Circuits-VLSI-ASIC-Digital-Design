@@ -1,0 +1,26 @@
+
+Clock Cell Halo Rule Check in Summary
+=====================================
+
+-----------------------------------------------------
+Clock    Instances with cell_halo    Failed instances
+-----------------------------------------------------
+clk                343                      5
+-----------------------------------------------------
+
+Total number of violating instances: 5
+
+Clock Cell Halo Rule Violations
+===============================
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+No.    Cell        Instance                     In clock    Power domain    Cell Halo (x, y)    Violating instance           From clock    Intrusion (x, y)
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+ 1     BUFX2       CTS_ccl_a_buf_00308          clk         auto-default    (0.2, 3.42)         FE_USKC2559_CTS_133          clk           (1, 1.71)
+ 2     CLKBUFX4    CTS_ccl_a_buf_00297          clk         auto-default    (0.2, 1.71)         FE_USKC2564_CTS_130          clk           (0.6, 1.71)
+ 3     CLKBUFX3    FE_USKC2564_CTS_130          clk         auto-default    (0.2, 1.71)         CTS_ccl_a_buf_00297          clk           (0.6, 1.71)
+ 4     CLKBUFX3    FE_USKC2561_CTS_156          clk         auto-default    (0.2, 1.71)         CTS_ccl_a_buf_00170_clone    clk           (0.4, 1.71)
+ 5     CLKBUFX4    CTS_ccl_a_buf_00170_clone    clk         auto-default    (0.2, 1.71)         FE_USKC2561_CTS_156          clk           (0.4, 1.71)
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+

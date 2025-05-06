@@ -1,0 +1,74 @@
+# Setup Path for library
+set_db init_lib_search_path /mnt/apps/prebuilt/eda/designkits/GPDK/gsclib045/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_svt_v4.4/gsclib045/timing/
+
+#setup script path
+set_db script_search_path /home/d/deirmentz/VLSI_ASIC/Script/
+
+#setup hdl path
+set_db init_hdl_search_path /home/d/deirmentz/VLSI_ASIC/Risc-vVerilog/
+
+#Setup timing library
+set_db library  /mnt/apps/prebuilt/eda/designkits/GPDK/gsclib045/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_svt_v4.4/gsclib045/timing/slow_vdd1v0_basicCells.lib
+#end
+
+#Setup lef library
+set_db lef_library {
+    /mnt/apps/prebuilt/eda/designkits/GPDK/gsclib045/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_svt_v4.4/gsclib045/lef/gsclib045_tech.lef
+    /mnt/apps/prebuilt/eda/designkits/GPDK/gsclib045/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_svt_v4.4/gsclib045/lef/gsclib045_macro.lef}
+#end
+
+#Setup qrc library
+read_qrc /mnt/apps/prebuilt/eda/designkits/GPDK/gsclib045/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_svt_v4.4/gsclib045/qrc/qx/gpdk045.tch
+#end
+
+# Setup hdl file
+read_hdl picorv32.v
+
+# Elaborate
+elaborate picorv32
+
+# Check design
+check_design -all > home/d/deirmentz/VLSI_ASIC/Exercises/Exercise4/Exercise4_Step3_Check_Design.txt
+
+# Read the sdc file
+read_sdc /home/d/deirmentz/VLSI_ASIC/Exercises/Exercise4/Step_4/Exercise_4_Step_4_Constraints.sdc
+
+# Check timing intent
+check_timing_intent > /home/d/deirmentz/VLSI_ASIC/Exercises/Exercise4/Step_4/Checks/Exercise4_Step5_Check_Timing_Intent.txt
+
+# Setting for innovus
+set_db / .use_scan_seqs_for_non_dft false
+
+# Synthesis Generic
+syn_generic 
+
+# Synthesis Mapping
+syn_map
+
+# Synthesis Optimization
+syn_opt
+
+# Report Area
+report_area > /home/d/deirmentz/VLSI_ASIC/Exercises/Exercise4/Step_5/Reports/Step5_Report_Area.txt
+
+# Report Gates
+report_gates > /home/d/deirmentz/VLSI_ASIC/Exercises/Exercise4/Step_5/Reports/Step5_Report_Gates.txt
+
+# Report Timing
+report_timing > /home/d/deirmentz/VLSI_ASIC/Exercises/Exercise4/Step_5/Reports/Step5_Report_Timing.txt
+
+# Report Power
+report_power > /home/d/deirmentz/VLSI_ASIC/Exercises/Exercise4/Step_5/Reports/Step5_Report_Power.txt
+
+# Report Quality of Results
+report_qor > /home/d/deirmentz/VLSI_ASIC/Exercises/Exercise4/Step_5/Reports/Step5_Report_QoR.txt
+
+# Export Design
+#------------- #optional steps
+write_hdl > /home/d/deirmentz/VLSI_ASIC/Exercises/Exercise4/Step_5/Export_Design/Exercise4_Step5_Design.v
+write_sdc > /home/d/deirmentz/VLSI_ASIC/Exercises/Exercise4/Step_5/Export_Design/Exercise4_Step5_Constraints.sdc
+write_script > /home/d/deirmentz/VLSI_ASIC/Exercises/Exercise4/Step_5/Export_Design/Exercise4_Step5_Constraints.g
+
+write_design -innovus picorv32
+
+exit
