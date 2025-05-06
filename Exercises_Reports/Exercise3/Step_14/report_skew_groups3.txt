@@ -1,0 +1,197 @@
+Clock tree timing engine global stage delay update for Delay_Corner_Exer1:both.early...
+Clock tree timing engine global stage delay update for Delay_Corner_Exer1:both.early done. (took cpu=0:00:00.2 real=0:00:00.2)
+Clock tree timing engine global stage delay update for Delay_Corner_Exer1:both.late...
+Clock tree timing engine global stage delay update for Delay_Corner_Exer1:both.late done. (took cpu=0:00:00.1 real=0:00:00.1)
+
+Skew Group Structure:
+=====================
+
+--------------------------------------------------------------------------------
+Skew Group                   Sources    Constrained Sinks    Unconstrained Sinks
+--------------------------------------------------------------------------------
+clk/Constraint_Mode_Exer1       1             1961                    0
+--------------------------------------------------------------------------------
+
+Skew Group Summary:
+===================
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Timing Corner                    Skew Group                   ID Target    Min ID    Max ID    Avg ID    Std.Dev. ID    Skew Target Type    Skew Target    Skew     Skew window occupancy
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Delay_Corner_Exer1:both.early    clk/Constraint_Mode_Exer1        -        0.514     0.577     0.545        0.015       ignored                  -         0.062              -
+Delay_Corner_Exer1:both.late     clk/Constraint_Mode_Exer1    none         0.522     0.584     0.553        0.015       explicit             0.500         0.062    100% {0.522, 0.584}
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+* - indicates that target was not met.
+
+Skew Group Min/Max path pins:
+=============================
+
+--------------------------------------------------------------------------------------------------
+Timing Corner                    Skew Group                   Min ID    PathID    Max ID    PathID
+--------------------------------------------------------------------------------------------------
+Delay_Corner_Exer1:both.early    clk/Constraint_Mode_Exer1    0.514       1       0.577       2
+-    min cpuregs_reg[2][16]/CK
+-    max count_instr_reg[56]/CK
+Delay_Corner_Exer1:both.late     clk/Constraint_Mode_Exer1    0.522       3       0.584       4
+-    min cpuregs_reg[2][16]/CK
+-    max count_instr_reg[56]/CK
+--------------------------------------------------------------------------------------------------
+
+Timing for timing corner Delay_Corner_Exer1:both.early, min clock_path:
+=======================================================================
+
+PathID    : 1
+Path type : skew group clk/Constraint_Mode_Exer1 (path 1 of 1)
+Start     : clk
+End       : cpuregs_reg[2][16]/CK
+Delay     : 0.514
+
+-----------------------------------------------------------------------------------------------
+Name  Lib cell  Event  Incr   Arrival  Slew   Cap    Location          Distance  Fanout  Status
+                       (ns)   (ns)     (ns)   (pF)                     (um)              
+-- Clockpath trace ----------------------------------------------------------------------------
+clk
+-     -         rise   -       0.000   0.034  0.005  (105.500,0.000)   -            1    
+CTS_ccl_a_buf_00179/A
+-     CLKBUFX4  rise   0.000   0.000   0.034  -      (105.830,74.000)   74.330   -       
+CTS_ccl_a_buf_00179/Y
+-     CLKBUFX4  rise   0.104   0.104   0.053  0.007  (105.560,74.380)    0.650      3    
+CTS_ccl_a_buf_00176/A
+-     CLKBUFX3  rise   0.000   0.104   0.053  -      (125.500,92.815)   38.375   -       
+CTS_ccl_a_buf_00176/Y
+-     CLKBUFX3  rise   0.103   0.207   0.051  0.005  (125.285,93.400)    0.800      3    
+CTS_ccl_a_buf_00168/A
+-     BUFX2     rise   0.000   0.207   0.051  -      (129.700,92.815)    5.000   -       
+CTS_ccl_a_buf_00168/Y
+-     BUFX2     rise   0.101   0.309   0.031  0.001  (129.335,93.280)    0.830      2    
+CTS_ccl_a_buf_00147/A
+-     CLKBUFX3  rise   0.000   0.309   0.031  -      (131.300,96.235)    4.920   -       
+CTS_ccl_a_buf_00147/Y
+-     CLKBUFX3  rise   0.092   0.400   0.050  0.005  (131.085,96.820)    0.800      5    
+CTS_ccl_a_buf_00055/A
+-     CLKBUFX4  rise   0.000   0.400   0.050  -      (139.230,97.940)    9.265   -       
+CTS_ccl_a_buf_00055/Y
+-     CLKBUFX4  rise   0.114   0.514   0.057  0.008  (138.960,98.320)    0.650     13    
+cpuregs_reg[2][16]/CK
+-     DFFQXL    rise   0.000   0.514   0.057  -      (144.085,96.565)    6.880   -       
+-----------------------------------------------------------------------------------------------
+
+Timing for timing corner Delay_Corner_Exer1:both.early, max clock_path:
+=======================================================================
+
+PathID    : 2
+Path type : skew group clk/Constraint_Mode_Exer1 (path 1 of 1)
+Start     : clk
+End       : count_instr_reg[49]/CK
+Delay     : 0.577
+
+-----------------------------------------------------------------------------------------------
+Name  Lib cell  Event  Incr   Arrival  Slew   Cap    Location          Distance  Fanout  Status
+                       (ns)   (ns)     (ns)   (pF)                     (um)              
+-- Clockpath trace ----------------------------------------------------------------------------
+clk
+-     -         rise   -       0.000   0.034  0.005  (105.500,0.000)   -            1    
+CTS_ccl_a_buf_00179/A
+-     CLKBUFX4  rise   0.000   0.000   0.034  -      (105.830,74.000)   74.330   -       
+CTS_ccl_a_buf_00179/Y
+-     CLKBUFX4  rise   0.104   0.104   0.053  0.007  (105.560,74.380)    0.650      3    
+CTS_ccl_a_buf_00177/A
+-     CLKBUFX4  rise   0.000   0.104   0.053  -      (95.630,92.820)    28.370   -       
+CTS_ccl_a_buf_00177/Y
+-     CLKBUFX4  rise   0.112   0.217   0.051  0.007  (95.360,92.440)     0.650      3    
+CTS_ccl_a_buf_00174/A
+-     BUFX2     rise   0.000   0.217   0.051  -      (56.500,130.435)   76.855   -       
+CTS_ccl_a_buf_00174/Y
+-     BUFX2     rise   0.117   0.334   0.059  0.004  (56.135,130.900)    0.830      3    
+CTS_ccl_a_buf_00166/A
+-     CLKBUFX4  rise   0.000   0.334   0.059  -      (46.030,152.660)   31.865   -       
+CTS_ccl_a_buf_00166/Y
+-     CLKBUFX4  rise   0.120   0.454   0.060  0.008  (45.760,153.040)    0.650      7    
+CTS_ccl_a_buf_00136/A
+-     CLKBUFX4  rise   0.000   0.454   0.060  -      (37.030,193.700)   49.390   -       
+CTS_ccl_a_buf_00136/Y
+-     CLKBUFX4  rise   0.122   0.577   0.063  0.009  (36.760,194.080)    0.650     14    
+count_instr_reg[49]/CK
+-     DFFHQX1   rise   0.000   0.577   0.063  -      (22.075,216.190)   36.795   -       
+-----------------------------------------------------------------------------------------------
+
+Timing for timing corner Delay_Corner_Exer1:both.late, min clock_path:
+======================================================================
+
+PathID    : 3
+Path type : skew group clk/Constraint_Mode_Exer1 (path 1 of 1)
+Start     : clk
+End       : cpuregs_reg[2][16]/CK
+Delay     : 0.522
+
+-----------------------------------------------------------------------------------------------
+Name  Lib cell  Event  Incr   Arrival  Slew   Cap    Location          Distance  Fanout  Status
+                       (ns)   (ns)     (ns)   (pF)                     (um)              
+-- Clockpath trace ----------------------------------------------------------------------------
+clk
+-     -         rise   -       0.000   0.044  0.005  (105.500,0.000)   -            1    
+CTS_ccl_a_buf_00179/A
+-     CLKBUFX4  rise   0.001   0.001   0.044  -      (105.830,74.000)   74.330   -       
+CTS_ccl_a_buf_00179/Y
+-     CLKBUFX4  rise   0.109   0.110   0.053  0.007  (105.560,74.380)    0.650      3    
+CTS_ccl_a_buf_00176/A
+-     CLKBUFX3  rise   0.001   0.110   0.053  -      (125.500,92.815)   38.375   -       
+CTS_ccl_a_buf_00176/Y
+-     CLKBUFX3  rise   0.103   0.213   0.051  0.005  (125.285,93.400)    0.800      3    
+CTS_ccl_a_buf_00168/A
+-     BUFX2     rise   0.000   0.213   0.051  -      (129.700,92.815)    5.000   -       
+CTS_ccl_a_buf_00168/Y
+-     BUFX2     rise   0.101   0.315   0.032  0.001  (129.335,93.280)    0.830      2    
+CTS_ccl_a_buf_00147/A
+-     CLKBUFX3  rise   0.000   0.315   0.032  -      (131.300,96.235)    4.920   -       
+CTS_ccl_a_buf_00147/Y
+-     CLKBUFX3  rise   0.092   0.407   0.050  0.005  (131.085,96.820)    0.800      5    
+CTS_ccl_a_buf_00055/A
+-     CLKBUFX4  rise   0.000   0.407   0.050  -      (139.230,97.940)    9.265   -       
+CTS_ccl_a_buf_00055/Y
+-     CLKBUFX4  rise   0.114   0.522   0.057  0.008  (138.960,98.320)    0.650     13    
+cpuregs_reg[2][16]/CK
+-     DFFQXL    rise   0.000   0.522   0.057  -      (144.085,96.565)    6.880   -       
+-----------------------------------------------------------------------------------------------
+
+Timing for timing corner Delay_Corner_Exer1:both.late, max clock_path:
+======================================================================
+
+PathID    : 4
+Path type : skew group clk/Constraint_Mode_Exer1 (path 1 of 1)
+Start     : clk
+End       : count_instr_reg[49]/CK
+Delay     : 0.584
+
+-----------------------------------------------------------------------------------------------
+Name  Lib cell  Event  Incr   Arrival  Slew   Cap    Location          Distance  Fanout  Status
+                       (ns)   (ns)     (ns)   (pF)                     (um)              
+-- Clockpath trace ----------------------------------------------------------------------------
+clk
+-     -         rise   -       0.000   0.044  0.005  (105.500,0.000)   -            1    
+CTS_ccl_a_buf_00179/A
+-     CLKBUFX4  rise   0.001   0.001   0.044  -      (105.830,74.000)   74.330   -       
+CTS_ccl_a_buf_00179/Y
+-     CLKBUFX4  rise   0.109   0.110   0.053  0.007  (105.560,74.380)    0.650      3    
+CTS_ccl_a_buf_00177/A
+-     CLKBUFX4  rise   0.001   0.110   0.053  -      (95.630,92.820)    28.370   -       
+CTS_ccl_a_buf_00177/Y
+-     CLKBUFX4  rise   0.112   0.223   0.052  0.007  (95.360,92.440)     0.650      3    
+CTS_ccl_a_buf_00174/A
+-     BUFX2     rise   0.000   0.223   0.052  -      (56.500,130.435)   76.855   -       
+CTS_ccl_a_buf_00174/Y
+-     BUFX2     rise   0.117   0.340   0.059  0.004  (56.135,130.900)    0.830      3    
+CTS_ccl_a_buf_00166/A
+-     CLKBUFX4  rise   0.000   0.340   0.059  -      (46.030,152.660)   31.865   -       
+CTS_ccl_a_buf_00166/Y
+-     CLKBUFX4  rise   0.120   0.461   0.060  0.008  (45.760,153.040)    0.650      7    
+CTS_ccl_a_buf_00136/A
+-     CLKBUFX4  rise   0.001   0.461   0.060  -      (37.030,193.700)   49.390   -       
+CTS_ccl_a_buf_00136/Y
+-     CLKBUFX4  rise   0.123   0.584   0.063  0.009  (36.760,194.080)    0.650     14    
+count_instr_reg[49]/CK
+-     DFFHQX1   rise   0.000   0.584   0.063  -      (22.075,216.190)   36.795   -       
+-----------------------------------------------------------------------------------------------
+
+
