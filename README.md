@@ -13,7 +13,6 @@
 7. [Repository Structure](#-repository-structure)
 8. [Reflections & Learning Outcomes](#-reflections--learning-outcomes)
 9. [References](#-references)
-10. [Contact](#-contact)
 
 ---
 
