@@ -1,0 +1,5 @@
+    Hinst Name       Module Name          Inst Count           Total Area
+----------------------------------------------------------------------
+picorv32_chip                                  15262          6198945.408
+ example             picorv32                  13564            47206.260
+ iopads              picorv32_pads              1680          6151594.482

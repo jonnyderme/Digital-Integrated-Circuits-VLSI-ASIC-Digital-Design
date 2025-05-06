@@ -1,0 +1,25 @@
+**WARN: (IMPCCOPT-2351):	Instance 'iopads/pad_clk/Y' has excessive cell halos halo_x = 1.000000 and halo_y = 240.000000.
+**WARN: (IMPCCOPT-2351):	Instance 'iopads/pad_clk/Y' has excessive cell halos halo_x = 1.000000 and halo_y = 240.000000.
+
+Clock Cell Halo Rule Check in Summary
+=====================================
+
+-----------------------------------------------------
+Clock    Instances with cell_halo    Failed instances
+-----------------------------------------------------
+clk                475                      1
+-----------------------------------------------------
+
+Total number of violating instances: 2
+
+Clock Cell Halo Rule Violations
+===============================
+
+---------------------------------------------------------------------------------------------------------------------------------------------
+No.    Cell     Instance          In clock    Power domain    Cell Halo (x, y)    Violating instance           From clock    Intrusion (x, y)
+---------------------------------------------------------------------------------------------------------------------------------------------
+ 1     PADDI    iopads/pad_clk    clk         auto-default    (1, 240)            example/CTS_ccl_buf_00724    clk           (1.2, 1.71)
+ 2     PADDI    iopads/pad_clk    clk         auto-default    (1, 240)            example/CTS_csf_buf_00729    clk           (1, 1.71)
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+

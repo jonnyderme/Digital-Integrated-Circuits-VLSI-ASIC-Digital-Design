@@ -1,0 +1,230 @@
+
+Power Net Detected:
+        Voltage	    Name
+             0V	    VSS
+           0.9V	    VDD
+Using Power View: default_emulate_view.
+
+Begin Power Analysis
+
+             0V	    VSS
+           0.9V	    VDD
+
+Begin Processing Timing Library for Power Calculation
+
+Begin Processing Timing Library for Power Calculation
+
+
+
+Begin Processing Power Net/Grid for Power Calculation
+
+Ended Processing Power Net/Grid for Power Calculation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=3386.25MB/4895.46MB/7435.22MB)
+
+Begin Processing Timing Window Data for Power Calculation
+
+clk(200MHz) CK: assigning clock clk to net clk
+Ended Processing Timing Window Data for Power Calculation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=3386.88MB/4895.46MB/7435.22MB)
+
+Begin Processing User Attributes
+
+Ended Processing User Attributes: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=3387.00MB/4895.46MB/7435.22MB)
+
+Begin Processing Signal Activity
+
+
+Starting Levelizing
+2025-Feb-24 23:33:46 (2025-Feb-24 21:33:46 GMT)
+2025-Feb-24 23:33:46 (2025-Feb-24 21:33:46 GMT): 10%
+2025-Feb-24 23:33:46 (2025-Feb-24 21:33:46 GMT): 20%
+2025-Feb-24 23:33:46 (2025-Feb-24 21:33:46 GMT): 30%
+2025-Feb-24 23:33:46 (2025-Feb-24 21:33:46 GMT): 40%
+2025-Feb-24 23:33:46 (2025-Feb-24 21:33:46 GMT): 50%
+2025-Feb-24 23:33:46 (2025-Feb-24 21:33:46 GMT): 60%
+2025-Feb-24 23:33:46 (2025-Feb-24 21:33:46 GMT): 70%
+2025-Feb-24 23:33:46 (2025-Feb-24 21:33:46 GMT): 80%
+2025-Feb-24 23:33:46 (2025-Feb-24 21:33:46 GMT): 90%
+
+Finished Levelizing
+2025-Feb-24 23:33:47 (2025-Feb-24 21:33:47 GMT)
+
+Starting Activity Propagation
+2025-Feb-24 23:33:47 (2025-Feb-24 21:33:47 GMT)
+** INFO:  (VOLTUS_POWR-1356): No default input activity has been set. Defaulting to 0.2.
+Use 'set_default_switching_activity -input_activity' command to change the default activity value.
+
+2025-Feb-24 23:33:47 (2025-Feb-24 21:33:47 GMT): 10%
+2025-Feb-24 23:33:47 (2025-Feb-24 21:33:47 GMT): 20%
+
+Finished Activity Propagation
+2025-Feb-24 23:33:47 (2025-Feb-24 21:33:47 GMT)
+Ended Processing Signal Activity: (cpu=0:00:01, real=0:00:01, mem(process/total/peak)=3387.63MB/4895.46MB/7435.22MB)
+
+Begin Power Computation
+
+      ----------------------------------------------------------
+      # of cell(s) missing both power/leakage table: 0
+      # of cell(s) missing power table: 0
+      # of cell(s) missing leakage table: 0
+      ----------------------------------------------------------
+
+
+
+Starting Calculating power
+2025-Feb-24 23:33:47 (2025-Feb-24 21:33:47 GMT)
+ ... Calculating switching power
+2025-Feb-24 23:33:47 (2025-Feb-24 21:33:47 GMT): 10%
+2025-Feb-24 23:33:47 (2025-Feb-24 21:33:47 GMT): 20%
+2025-Feb-24 23:33:47 (2025-Feb-24 21:33:47 GMT): 30%
+2025-Feb-24 23:33:47 (2025-Feb-24 21:33:47 GMT): 40%
+2025-Feb-24 23:33:47 (2025-Feb-24 21:33:47 GMT): 50%
+ ... Calculating internal and leakage power
+2025-Feb-24 23:33:48 (2025-Feb-24 21:33:48 GMT): 60%
+2025-Feb-24 23:33:48 (2025-Feb-24 21:33:48 GMT): 70%
+2025-Feb-24 23:33:49 (2025-Feb-24 21:33:49 GMT): 80%
+2025-Feb-24 23:33:49 (2025-Feb-24 21:33:49 GMT): 90%
+
+Finished Calculating power
+2025-Feb-24 23:33:49 (2025-Feb-24 21:33:49 GMT)
+      # of MSMV cell(s) missing power_level: 0
+Ended Power Computation: (cpu=0:00:02, real=0:00:02, mem(process/total/peak)=3388.25MB/4895.46MB/7435.22MB)
+
+Begin Processing User Attributes
+
+Ended Processing User Attributes: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=3388.50MB/4895.46MB/7435.22MB)
+
+Ended Power Analysis: (cpu=0:00:03, real=0:00:03, mem(process/total/peak)=3388.50MB/4895.46MB/7435.22MB)
+
+Begin Boundary Leakage Calculation
+Ended Boundary Leakage Calculation: (cpu=0:00:00, real=0:00:00,
+mem(process/total/peak)=3388.50MB/4895.46MB/7435.22MB)
+Begin Static Power Report Generation
+*----------------------------------------------------------------------------------------
+*	Innovus 21.35-s114_1 (64bit) 10/13/2022 12:11 (Linux 3.10.0-693.el7.x86_64)
+*	
+*
+* 	Date & Time:	2025-Feb-24 23:33:49 (2025-Feb-24 21:33:49 GMT)
+*
+*----------------------------------------------------------------------------------------
+*
+*	Design: picorv32_chip
+*
+*	Liberty Libraries used:
+*	        default_emulate_view: /mnt/apps/prebuilt/eda/designkits/GPDK/gsclib045/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_svt_v4.4/gsclib045/timing/slow_vdd1v0_basicCells.lib
+*	        default_emulate_view: /mnt/apps/prebuilt/eda/designkits/GPDK/giolib045/lan/flow/rfkit/reference_libs/GPDK045/giolib045_v3.5/timing/pads_SS_s1vg.lib
+*
+*	Parasitic Files used:
+*
+*       Power View : default_emulate_view
+*
+*       User-Defined Activity : N.A.
+*
+*       Activity File: N.A.
+*
+*       Hierarchical Global Activity: N.A.
+*
+*       Global Activity: N.A.
+*
+*       Sequential Element Activity: 0.200000
+*
+*       Primary Input Activity: 0.200000
+*
+*       Default icg ratio: N.A.
+*
+*       Global Comb ClockGate Ratio: N.A.
+*
+*	Power Units = 1mW
+*
+*	Time Units = 1e-09 secs
+*
+*       report_power
+*
+-----------------------------------------------------------------------------------------
+  6 instances have no static power
+** WARN:  (VOLTUS_POWR-2152): Instance iopads/pad_vss (PADVSS) has no static power. This might be because either the duty cycle and activity of all the connected nets
+is 0 or the instance is connected to power off rails. If this is not the expected behaviour and static power is required, ensure that the instance is connected
+to power on rails and that the duty cycle and activity of at least one net is not 0.
+
+** WARN:  (VOLTUS_POWR-2152): Instance iopads/pad_vdd (PADVDD) has no static power. This might be because either the duty cycle and activity of all the connected nets
+is 0 or the instance is connected to power off rails. If this is not the expected behaviour and static power is required, ensure that the instance is connected
+to power on rails and that the duty cycle and activity of at least one net is not 0.
+
+** WARN:  (VOLTUS_POWR-2152): Instance iopads/pad_corner0 (padIORINGCORNER) has no static power. This might be because either the duty cycle and activity of all the connected nets
+is 0 or the instance is connected to power off rails. If this is not the expected behaviour and static power is required, ensure that the instance is connected
+to power on rails and that the duty cycle and activity of at least one net is not 0.
+
+** WARN:  (VOLTUS_POWR-2152): Instance iopads/pad_corner1 (padIORINGCORNER) has no static power. This might be because either the duty cycle and activity of all the connected nets
+is 0 or the instance is connected to power off rails. If this is not the expected behaviour and static power is required, ensure that the instance is connected
+to power on rails and that the duty cycle and activity of at least one net is not 0.
+
+** WARN:  (VOLTUS_POWR-2152): Instance iopads/pad_corner2 (padIORINGCORNER) has no static power. This might be because either the duty cycle and activity of all the connected nets
+is 0 or the instance is connected to power off rails. If this is not the expected behaviour and static power is required, ensure that the instance is connected
+to power on rails and that the duty cycle and activity of at least one net is not 0.
+
+** WARN:  (VOLTUS_POWR-2152): Instance iopads/pad_corner3 (padIORINGCORNER) has no static power. This might be because either the duty cycle and activity of all the connected nets
+is 0 or the instance is connected to power off rails. If this is not the expected behaviour and static power is required, ensure that the instance is connected
+to power on rails and that the duty cycle and activity of at least one net is not 0.
+
+*
+
+
+
+Total Power
+-----------------------------------------------------------------------------------------
+Total Internal Power:      159.76068144 	   85.4977%
+Total Switching Power:       3.66378024 	    1.9607%
+Total Leakage Power:        23.43527748 	   12.5416%
+Total Power:               186.85973916
+-----------------------------------------------------------------------------------------
+
+
+Group                           Internal   Switching     Leakage       Total  Percentage 
+                                Power      Power         Power         Power  (%)        
+-----------------------------------------------------------------------------------------
+Sequential                         1.116      0.1045   0.0004926       1.221      0.6532
+Macro                                  0           0           0           0           0
+IO                                   158       1.799       23.43       183.2       98.05
+Combinational                     0.6648       1.761   0.0009925       2.427       1.299
+Clock (Combinational)                  0           0           0           0           0
+Clock (Sequential)                     0           0           0           0           0
+-----------------------------------------------------------------------------------------
+Total                              159.8       3.664       23.44       186.9         100
+-----------------------------------------------------------------------------------------
+
+
+Rail                  Voltage   Internal   Switching     Leakage       Total  Percentage 
+                                Power      Power         Power         Power  (%)        
+-----------------------------------------------------------------------------------------
+VDD                       0.9      159.8       3.664       23.44       186.9         100
+
+
+Clock                           Internal   Switching     Leakage       Total  Percentage 
+                                Power      Power         Power         Power  (%)        
+-----------------------------------------------------------------------------------------
+clk                                2.823           0   0.0002034       2.823       1.511
+-----------------------------------------------------------------------------------------
+Total                              2.823           0   0.0002034       2.823       1.511
+-----------------------------------------------------------------------------------------
+Clock: clk
+Clock Period: 0.005000 usec 
+Clock Toggle Rate:   400.0000 Mhz 
+Clock Static Probability:  0.5000
+  
+ 
+ 
+-----------------------------------------------------------------------------------------
+*	Power Distribution Summary: 
+*              Highest Average Power:            iopads/pad_clk (PADDI):            2.823
+*              Highest Leakage Power:           iopads/pad_trap (PADDO):          0.07626
+*                Total Cap:      2.29698e-10 F
+*                Total instances in design: 13957
+*                Total instances in design with no power:     6
+*                Total instances in design with no activty:     6
+
+*                Total Fillers and Decap:     6
+-----------------------------------------------------------------------------------------
+ 
+** INFO:  (VOLTUS_POWR-3465): There are 0 decaps and 6 fillers in the design
+
+Ended Static Power Report Generation: (cpu=0:00:00, real=0:00:00,
+mem(process/total/peak)=3392.63MB/4895.46MB/7435.22MB)
+
